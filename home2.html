@@ -8,17 +8,60 @@
       <mata name="description" content="This is website"/>
       <meta charset="utf-8"/>  
 
-      <link href="css/styles.css" rel="stylesheet" />
+     <!-- <link href="css/styles2.css" rel="stylesheet" />-->
       <style>
+        html {
+            background-color: yellow;
+        }
+        h1 {
+            color: blue;
+            font-size: 20px;
 
-      </style>
+        }
+
+        address {
+            text-align: center;
+            color: tomato;
+        }
+   /*
+        Box는 Margin과 Border Padding이 있다 
+        Margin은 Box의 Border의 바깥에 있는 공간
+
+   */     
+        body {
+            background-color: blueviolet;
+            margin: 0px;
+        }
+        div {
+            
+            height: 150px;
+            width: 150px;
+            background-color: tomato;
+        }
+        span {
+            display: block;
+            background-color: aqua;
+        }
+        </style>
     </head>
+
     <!--Body는 Contents-->
     <body>
+        <div></div>
+        <div></div>
+        <div></div>
+        <span>hello</span>
+        <span>hello</span>
+        <span>hello</span>
+        <a href="#">link</a>
+        <span>hello</span>
         <h1>
             Hello!
         </h1>
         <a href="http://google.com" target="_blank">Go to google</a>
+        <p>
+            hello What's your name
+        </p>
         <img src="img/logo_before.jpg" />
         <p>paragrap</p>
         <pre>타자기 hahahaha</pre>
@@ -34,7 +77,7 @@
         <form>
             <div>
             <label for="website">Website</label>
-            <input id="website" required placeholder="Name" type="range" />
+            <input id="website" required placeholder="Name" type="input" />
             </div>
             <div>
                 <label for="website2">Website</label>
