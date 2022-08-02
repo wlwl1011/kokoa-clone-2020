@@ -10,13 +10,14 @@
 
      <!-- <link href="css/styles2.css" rel="stylesheet" />-->
       <style>
-
+/*
         * {
             border : 2px solid black
-            /*
+            
             border : 크기 모양 색
-            */
+        
         }
+        */
         html {
             background-color: yellow;
         }
@@ -37,14 +38,23 @@
    */     
         body {
             background-color: blueviolet;
-            margin: 0px;
+           
+            display: flex;
+            justify-content: center;
             /*
             margin : 위 아래
             margin : 위 오른쪽 아래쪽 왼쪽 (시계 방향)
             */
         }
         div {
-            
+            /*inline block은 Responsive Design을 지원하지 않음*/
+            /*inline은 width와 height가 없음*/
+            /*
+            Flex 규칙
+            1. 자식에게는 아무 것도 적으면 안된다. 즉 부모 엘리먼트에만 명시해야한다.
+            2. 
+            */
+            display: inline-block;
             height: 150px;
             width: 150px;
             background-color: tomato;
@@ -101,7 +111,12 @@
 
     <!--Body는 Contents-->
     <body>
-        <div id = "first">
+        <div></div>
+        <div></div>
+        <div></div>
+        <!--
+
+            <div id = "first">
             <div id = "second">
                 <div id = "third">
                     <div id = "fourth">
@@ -137,7 +152,8 @@
         <p>I like to live in <sub>South Korea</sub></p>
         <p>I like to live in <sup>South Korea</sup></p>
         <iframe width="1188" height="668" src="https://www.youtube.com/embed/Aev3mSMAtUQ?list=RDAev3mSMAtUQ" title="[ENG] SMTM10 [6회/풀버전] ♬ TROUBLE - 던밀스, 노스페이스갓, 소코도모, 카키, 에이체스 @음원미션 Full ver." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <!--Form은 웹페이지의 입력 양식을 의미. 로그인 창이나, 회원가입 폼들이 이에 해당됨. 텍스트 필드에 글자를 입력하거나 후에 버튼 클릭 시 백엔드에 양식이 전달되어 이를 처리하게함-->
+       
+        Form은 웹페이지의 입력 양식을 의미. 로그인 창이나, 회원가입 폼들이 이에 해당됨. 텍스트 필드에 글자를 입력하거나 후에 버튼 클릭 시 백엔드에 양식이 전달되어 이를 처리하게함
         <form>
             <div>
             <label for="website">Website</label>
@@ -159,7 +175,7 @@
 
                 </main>    
             <input type="submit" value="Create Account"/>
-        </form>
+        </form>-->
     </body>
 </html>
 
