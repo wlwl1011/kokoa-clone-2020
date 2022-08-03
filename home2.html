@@ -10,7 +10,29 @@
 
      <!-- <link href="css/styles2.css" rel="stylesheet" />-->
       <style>
+        :root {
+            --main-color: #fcce00;
+        }
+        a {
+            color: var(--main-color)
+        }
+        @keyframes superSexyCoinFlip
+        {
+            from{
+                transform: rotatex(0);
+            }
+            to{
+                transform: rotateX(360deg);
+            }
+        }
+        img {
+            border: 10px solid black;
+            border-radius: 50%;
+            animation: superSexyCoinFlip 5s ease-in-out;
+        }
+
 /*
+
         * {
             border : 2px solid black
             
@@ -38,7 +60,7 @@
    */     
         body {
            
-            height: 1000vh;
+            height: 100vh;
             margin: 50px;
        
             /*
@@ -78,8 +100,24 @@
         
             height: 150px;
             width: 150px;
-            background-color: wheat;
+            margin: 10px;
+            background-color: black;
         }
+        div:first-child {
+            
+            background-color: tomato;
+        }
+        div:last-child {
+            background-color: teal;
+        }
+        span {
+            background-color: pink;
+        }
+        span:nth-child(even) {
+            background-color: red;
+        }
+
+
 
        /* #first {
             background-color: aquamarine;
@@ -131,22 +169,32 @@
             position: fixed;
             background-color: wheat;
             width: 350px;
-        }*/
+        }
         .green {
             background-color: teal;
             position: relative;
             top:-10px;
             height: 100px;
-        }
+        }*/
         </style>
     </head>
 
     <!--Body는 Contents-->
     <body>
+        <div></div>
+        <div></div>
+        <div></div>
+        <span>hello</span>
+        <span>hello</span>
+        <span>hello</span>
+        
+        
+        
+        <!--
         <div>
             <div class="green"></div>
         </div>
-        <!--
+        
         <div>1</div>
         <div id="different">2</div>
         <div>3</div>
