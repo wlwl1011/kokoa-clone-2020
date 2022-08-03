@@ -17,7 +17,7 @@
             border : 크기 모양 색
         
         }
-        */
+     
         html {
             background-color: yellow;
         }
@@ -31,27 +31,32 @@
             text-align: center;
             color: tomato;
         }
-   /*
+ 
         Box는 Margin과 Border Padding이 있다 
         Margin은 Box의 Border의 바깥에 있는 공간
 
    */     
         body {
-            background-color: blueviolet;
-            height: 100vh;
+           
+            height: 1000vh;
+            margin: 50px;
+       
             /*
             vh -> view point , screen
-            */
+            
             display: flex;
             justify-content: center;
-            /*
+            
+            
             -------------> main axis 
-            */
+            
             align-items: center;
-            /*
+            flex-direction: row;
+            flex-wrap: nowrap;
+            
             |
             |
-            |
+            | 
             cross axis
             */
             /*
@@ -66,14 +71,17 @@
             Flex 규칙
             1. 자식에게는 아무 것도 적으면 안된다. 즉 부모 엘리먼트에만 명시해야한다.
             2. 
-            */
-            display: inline-block;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;*/
+        
             height: 150px;
             width: 150px;
-            background-color: tomato;
+            background-color: wheat;
         }
 
-        #first {
+       /* #first {
             background-color: aquamarine;
             width: 150px;
             height: 150px;
@@ -101,9 +109,9 @@
             height: 10px;
             padding: 10px;
         }
-        /*
+      
         margin은 좌우에 가질 수 있고 padding은 전부다 가질 수 있다
-        */
+       
         .tomato {
             background-color: tomato;
             color: whitde;
@@ -118,16 +126,31 @@
              
             background-color: aqua;
             padding: 20px;
+
+        #different {
+            position: fixed;
+            background-color: wheat;
+            width: 350px;
+        }*/
+        .green {
+            background-color: teal;
+            position: relative;
+            top:-10px;
+            height: 100px;
         }
         </style>
     </head>
 
     <!--Body는 Contents-->
     <body>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div>
+            <div class="green"></div>
+        </div>
         <!--
+        <div>1</div>
+        <div id="different">2</div>
+        <div>3</div>
+
 
             <div id = "first">
             <div id = "second">
