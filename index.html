@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   
     <link rel="stylesheet" href="css/styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,9 +29,10 @@
         <p class="Welcome-header__text">If you have a Kakao Account, log in with your email or phone number.</p>
     </header>
 
+    <!-- action은 어떤 페이지로 data를 보낼 건지 정할 수 있음 -->
     <form action="friends.html" method="get" id="login-form">
-        <input name="username" type="text" placeholder="Email or phone number"/>
-        <input name="password" type="password" placeholder="password"/>
+        <input name="username" required type="text" placeholder="Email or phone number"/>
+        <input name="password" required type="password" placeholder="password"/>
         <input type="submit" value="Log In"/>
         <a href="#">Find Kokoa Account or password</a>
     </form>
