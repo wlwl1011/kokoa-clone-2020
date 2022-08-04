@@ -7,13 +7,224 @@
       <title>Home - My first website.</title>
       <mata name="description" content="This is website"/>
       <meta charset="utf-8"/>  
+
+     <!-- <link href="css/styles2.css" rel="stylesheet" />-->
+      <style>
+        :root {
+            --main-color: #fcce00;
+        }
+        a {
+            color: var(--main-color)
+        }
+        @keyframes superSexyCoinFlip
+        {
+            from{
+                transform: rotatex(0);
+            }
+            to{
+                transform: rotateX(360deg);
+            }
+        }
+        img {
+            border: 10px solid black;
+            border-radius: 50%;
+            animation: superSexyCoinFlip 5s ease-in-out;
+        }
+
+/*
+
+        * {
+            border : 2px solid black
+            
+            border : 크기 모양 색
+        
+        }
+     
+        html {
+            background-color: yellow;
+        }
+        h1 {
+            color: blue;
+            font-size: 20px;
+
+        }
+
+        address {
+            text-align: center;
+            color: tomato;
+        }
+ 
+        Box는 Margin과 Border Padding이 있다 
+        Margin은 Box의 Border의 바깥에 있는 공간
+
+   */     
+        body {
+           
+            height: 100vh;
+            margin: 50px;
+       
+            /*
+            vh -> view point , screen
+            
+            display: flex;
+            justify-content: center;
+            
+            
+            -------------> main axis 
+            
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            
+            |
+            |
+            | 
+            cross axis
+            */
+            /*
+            margin : 위 아래
+            margin : 위 오른쪽 아래쪽 왼쪽 (시계 방향)
+            */
+        }
+        div {
+            /*inline block은 Responsive Design을 지원하지 않음*/
+            /*inline은 width와 height가 없음*/
+            /*
+            Flex 규칙
+            1. 자식에게는 아무 것도 적으면 안된다. 즉 부모 엘리먼트에만 명시해야한다.
+            2. 
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;*/
+        
+            height: 150px;
+            width: 150px;
+            margin: 10px;
+            background-color: black;
+        }
+        div:first-child {
+            
+            background-color: tomato;
+        }
+        div:last-child {
+            background-color: teal;
+        }
+        span {
+            background-color: pink;
+        }
+        span:nth-child(even) {
+            background-color: red;
+        }
+
+
+
+       /* #first {
+            background-color: aquamarine;
+            width: 150px;
+            height: 150px;
+            
+        }
+
+        #second {
+            background-color:antiquewhite ; 
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+        }
+
+
+        #third {
+            background-color: aquamarine;
+            width: 50px;
+            height: 50px;
+            padding: 10px;
+        }
+
+        #fourth {
+            background-color: antiquewhite;
+            width: 10px;
+            height: 10px;
+            padding: 10px;
+        }
+      
+        margin은 좌우에 가질 수 있고 padding은 전부다 가질 수 있다
+       
+        .tomato {
+            background-color: tomato;
+            color: whitde;
+            padding: 5px 10px;
+            border-radius: 10px;
+        }
+        .btn {
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        span {
+             
+            background-color: aqua;
+            padding: 20px;
+
+        #different {
+            position: fixed;
+            background-color: wheat;
+            width: 350px;
+        }
+        .green {
+            background-color: teal;
+            position: relative;
+            top:-10px;
+            height: 100px;
+        }*/
+        </style>
     </head>
+
     <!--Body는 Contents-->
     <body>
+        <div></div>
+        <div></div>
+        <div></div>
+        <span>hello</span>
+        <span>hello</span>
+        <span>hello</span>
+        
+        
+        
+        <!--
+        <div>
+            <div class="green"></div>
+        </div>
+        
+        <div>1</div>
+        <div id="different">2</div>
+        <div>3</div>
+
+
+            <div id = "first">
+            <div id = "second">
+                <div id = "third">
+                    <div id = "fourth">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div></div>
+        <div></div>
+        <span class = "btn tomato">hello</span>
+        <span>hello</span>
+        <span class = "btn tomato">hello</span>
+        <span>hello</span>
+        <span class = "btn tomato">hello</span>
+        <a href="#">link</a>
+        <span>hello</span>
         <h1>
             Hello!
         </h1>
         <a href="http://google.com" target="_blank">Go to google</a>
+        <p>
+            hello What's your name
+        </p>
         <img src="img/logo_before.jpg" />
         <p>paragrap</p>
         <pre>타자기 hahahaha</pre>
@@ -25,11 +236,12 @@
         <p>I like to live in <sub>South Korea</sub></p>
         <p>I like to live in <sup>South Korea</sup></p>
         <iframe width="1188" height="668" src="https://www.youtube.com/embed/Aev3mSMAtUQ?list=RDAev3mSMAtUQ" title="[ENG] SMTM10 [6회/풀버전] ♬ TROUBLE - 던밀스, 노스페이스갓, 소코도모, 카키, 에이체스 @음원미션 Full ver." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <!--Form은 웹페이지의 입력 양식을 의미. 로그인 창이나, 회원가입 폼들이 이에 해당됨. 텍스트 필드에 글자를 입력하거나 후에 버튼 클릭 시 백엔드에 양식이 전달되어 이를 처리하게함-->
+       
+        Form은 웹페이지의 입력 양식을 의미. 로그인 창이나, 회원가입 폼들이 이에 해당됨. 텍스트 필드에 글자를 입력하거나 후에 버튼 클릭 시 백엔드에 양식이 전달되어 이를 처리하게함
         <form>
             <div>
             <label for="website">Website</label>
-            <input id="website" required placeholder="Name" type="range" />
+            <input id="website" required placeholder="Name" type="input" />
             </div>
             <div>
                 <label for="website2">Website</label>
@@ -47,7 +259,7 @@
 
                 </main>    
             <input type="submit" value="Create Account"/>
-        </form>
+        </form>-->
     </body>
 </html>
 
